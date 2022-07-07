@@ -1,0 +1,71 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header{
+    background-color: forestgreen;
+    height: 20vh;
+    text-align: center;
+}
+header nav ul{
+    display: flex;
+
+    justify-content: center;
+}
+header h1
+{
+    margin: 0;
+}
+main{
+    background-color: peachpuff;
+    height: 70vh;
+    text-align: center;
+}
+footer{
+    height: 10vh;
+    background-color: #5eb5e0;
+
+}
+footer p{
+    margin-top: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+main h2{
+    margin-top: 0;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form div div {
+    padding-top: 20px;
+    display: flex;
+width: 25%;
+    align-self: center;
+
+
+
+}
+header nav ul li {
+    list-style-type: none;
+    padding-right: 20px;
+
+}
+header nav ul li a{
+   text-decoration: none;
+}
+form div div label{
+width: 20vw;
+    align-self: center;
+}
+h3 a{
+    padding-right: 1rem;
+}
+form button{
+    margin-top: 20px;
+}

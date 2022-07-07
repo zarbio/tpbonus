@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{%block title %}tpbonus {% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/css.css') }}">
+</head>
+<body>
+<header>
+    <h1>TPBONUS</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ path('product_home') }}">Home</a></li>
+            <li><a href="{{ path('product_list') }}">Products</a></li>
+            <li><a href="{{ path('product_add') }}">Add a product</a></li>
+        </ul>
+    </nav>
+</header>
+{# read and display all flash messages #}
+{% for label, messages in app.flashes %}
+    {% for message in messages %}
+        <div class="flash-{{ label }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endfor %}
+<main>
+    {% block body %}
+    {% endblock %}
+</main>
+<footer>
+    <p>&copy; tpbonus {{ "now"|date("Y") }}</p>
+</footer>
+
+
+</body>
+</html>

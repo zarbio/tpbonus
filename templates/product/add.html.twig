@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Add a product | {{ parent() }}
+{% endblock %}
+{% block body %}
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    {% if edit == false %}
+    <button>Create a product</button>
+    {% else %}
+    <button>Edit a product</button>
+{% endif %}
+    {{ form_end(form) }}
+{% endblock %}
+
